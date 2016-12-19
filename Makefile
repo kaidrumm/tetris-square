@@ -21,7 +21,7 @@ OBJ_NAME = $(SRC_NAME:.c=.o)
 all: $(NAME)
 
 $(NAME):
-	$(CC) $(CFLAGS) -o $(NAME) $(SRC_NAME) -L./lib -lft
+	$(CC) $(CFLAGS) -o $(NAME) $(SRC_NAME) -L. -lft
 
 norme:
 	norminette $(SRC_NAME)
